@@ -273,7 +273,24 @@ margin: 0;
     font-size: 30px;
    }
 }
-
+@media (max-width:355px)
+{
+  .landing .text
+  {
+    position: absolute;
+     left: 50%;
+     top: 10%;
+    transform: translateX(-50%,-10%);
+   
+    width: 90%;
+    padding: 0;
+  
+  }
+   .landing .text h1
+   {
+    font-size: 30px;
+   }
+}
 /* end landing */
 /* start hotels */
 .hotels {
