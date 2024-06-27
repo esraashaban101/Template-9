@@ -273,7 +273,7 @@ margin: 0;
     font-size: 30px;
    }
 }
-@media (max-width:355px)
+@media (max-width:350px)
 {
   .landing .text
   {
@@ -371,8 +371,9 @@ margin: 0;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 25px;
   position: relative;
+  
 
-  margin: 20px 0;
+ 
 }
 
 .clients .client {
@@ -395,6 +396,7 @@ margin: 0;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  margin-bottom: -30px;
   transform: translateY(-50px);
   transition: 0.3s;
   border: 2px solid #c9cbcd;
@@ -432,10 +434,13 @@ margin: 0;
 .discount {
 
   margin-top: 60px;
-  padding: 20px 50px;
+ 
   text-align: center;
 
-  .content {
+  .content 
+  {
+    width: 90%;
+    margin: auto;
     box-shadow: 0 0 10px 0 #c1c7d4;
     border-radius: 8px;
 
@@ -468,12 +473,6 @@ margin: 0;
 
 .discount button:hover {
   background-color: #435681;
-}
-
-@media (max-width:991px) {
-  .discount {
-    padding: 20px;
-  }
 }
 
 /* end discount */
