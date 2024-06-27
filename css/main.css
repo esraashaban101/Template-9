@@ -126,152 +126,149 @@ header nav ul li a:hover {
 
 /* start landing */
 .landing {
-
-  position: relative;
-  
-  height: 100vh;
-  margin-bottom: 100px;
- overflow: hidden;
-  padding: 20px 80px;
-}
-.landing .content
-{
-  height: 100vh;
-  
   background-image: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url("../img/landing.jpg");
-  background-size: cover;
-  border-radius: 15px;
-  background-position: center center;
   position: relative;
-}
-.landing .content .text{
-  padding: 50px;
-  position: absolute;
-  top: 30px;
-  color: white;
-  h1
-  {
-    font-size: 70px;
-  }
-  p{
-    position: absolute;
-    bottom: 70px;
-  }
-}
-.landing  img 
-{
-  
-  width: 100%;
-}
-.content-bottom
-{
- width: 80%;
-  position: absolute;
-  padding: 20px;
- bottom: -10px;
-  left: 10px;
-  right: 10px;
+  height: 100vh;
+  padding: 20px 80px;
+  width: 90%;
+  background-size: cover;
+  margin:50px auto;
   border-radius: 10px;
-  background-color: rgba(199, 193, 196,0.5);
- 
+}
+.landing .text
+{
+  color: white;
+  padding: 60px 40px;
+  margin: 0;
+  
+}
+.landing .text h1 {
+font-size: 50px;
+margin: 0;
 
-   margin-bottom: 50px;
-  margin: auto;
 }
 .bottom-text
 {
- 
+  position: absolute;
+  bottom: -7%;
+  /* background-color: rgba(199, 193, 196, 0.5); */
+  background-image: linear-gradient(rgba(199, 193, 196, 0.7), rgba(255,255,255,255));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
   display: flex;
   justify-content: space-between;
 
 }
-.bottom-text input
-{
-  border: none;
-  background-color:transparent ;
-  border-bottom: 1px black solid;
- 
+.bottom-text .box{
+  display: flex;
+  flex-direction: column;
+  
 }
-.bottom-text input:focus
+.bottom-text .box label{
+  transform: 0.3s;
+  margin-bottom: -10px;
+  font-size: 18px;
+}
+.bottom-text .box input {
+   border: none;
+   margin-bottom: -10px;
+   background-color: transparent;
+   border-bottom: 1px solid black;
+
+}
+.bottom-text .box span{
+ 
+  color: #6b6a6a;
+  font-size: 13px;
+  margin-top: 15px;
+  
+  
+}
+.bottom-text .box input:focus
 {
   outline: none;
-}
 
-.bottom-text p
-{
-  transition: 0.3s;
 }
- 
-.bottom-text span
+.bottom-text .box input:focus label
 {
-  margin-top: 10px;
-  
-  display: block;
+  font-size: 10px;
+
 }
-.bottom-text .icon{
+.bottom-text .box:last-child
+{
   background-color: #2c3855;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
+ padding: 20px 0;
+ transition: 0.1s;
 
 }
-.bottom-text .icon i{
+.bottom-text .box:last-child i
+{
   color: white;
-  font-size: 20px;
-  
+
+}
+.bottom-text .box:last-child:hover
+{
+  background-color: #435681;
+  cursor: pointer;
 }
 @media (max-width:991px)
 {
-  .landing
-  {
-    padding: 15px;
-  }
-
   .bottom-text
   {
     flex-direction: column;
+    bottom: -5%;
+    padding: 0 20px;
   }
-
-
 }
 @media (max-width:767px)
 {
-  .landing .content .text
+  .landing .text
   {
-    
-   
-    left: 50%;
+    position: absolute;
+     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 60px; 
-   
+
+  }
+  
+  label
+  {
+    margin: 10px 0;
+  }
+  .bottom-text .box:last-child
+  {
+    margin-top: 10px;
    
   }
-  .landing .content .text h1
+  .landing .bottom-text span
   {
-    font-size: 40px;
-   
+    display: block;
+    margin: 15px 0;
+
   }
 
-  .landing .content .text p{
-  
-    bottom: 20px;
-  
-  }
-  .content-bottom
+}
+@media (max-width:500px)
+{
+  .landing .text
   {
-    margin-top: 30px;
-  }
-  .bottom-text .icon
-  {
-   margin-top: 40px;
+    position: absolute;
+     left: 50%;
+ top: 0;
+    transform: translateX(-50%);
+   
+   
+ 
   }
 }
-
-
-
 /* end landing */
 /* start hotels */
 .hotels {
